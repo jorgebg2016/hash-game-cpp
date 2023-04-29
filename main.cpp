@@ -30,7 +30,6 @@ class Hash {
         int turns = 9;
         Player1 player1;
         Player2 player2;
-        Player currentPlayer;
         vector<vector<string>> table = {
             {"-", "-", "-"}, 
             {"-", "-", "-"}, 
@@ -238,7 +237,7 @@ class Hash {
                 if(this->verifyWinner(player)) {
 
                     cout << "O jogador " << player.name << " venceu!" << endl;
-                    
+
                     break;
                 } else if(turn == this->turns - 1) {
 
